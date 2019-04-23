@@ -33,5 +33,6 @@ def classify(model, inputs):
     label = labels[str(fc_out.data.numpy().argmax())]
     return {'label': label}
 
+
 if __name__ == '__main__':
     runway.run()
